@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "dagger-python-poc"
+version = "0.1.0"
+description = "A quick PoC about dagger python SDK"
+authors = ["Javier Juarez <jj@chainedto.cloud>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+  {include = "dagger_python_sdk_poc", from = "src"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+pytest-srcpaths = "^1.2.1"
+ruff = "^0.0.126"
+
+
+[tool.pytest.ini_options]
+addopts = "-ra -v"
+pythonpath = [
+  "src"
+]
+
+
+[tool.ruff]
+line-length = 132
+select = ["E", "F"]
+ignore = []
+exclude = [
+    ".envrc",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    ".pytest_cache",
+    "__pycache__",
+    "__pypackages__",
+    "dist"
+]
+per-file-ignores = {}
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+target-version = "py311"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
