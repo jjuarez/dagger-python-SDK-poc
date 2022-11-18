@@ -5,3 +5,13 @@ real python project that uses:
   * [Poetry](https://python-poetry.org/) as the build and package tool
   * Using the `src` pattern, which is not used by default in poetry projects
   * Using [pytest](https://pytest.org/) as Test frameworkhttps://docs.dagger.io/sdk/python
+
+## Getting Started
+For now the pipeline only implements the following commands:
+  * lint
+  * test
+
+the way to use this target is:
+```bash
+python pipeline.py (test|lint)
+```
