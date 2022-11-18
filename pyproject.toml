@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "dagger-python-poc"
-version = "0.1.0"
+name = "dagger-python-sdk-poc"
+version = "0.1.1"
 description = "A quick PoC about dagger python SDK"
 authors = ["Javier Juarez <jj@chainedto.cloud>"]
 license = "MIT"
