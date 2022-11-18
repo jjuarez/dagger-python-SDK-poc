@@ -16,8 +16,7 @@ The way to use this target is as follows:
 python pipeline.py (test|lint)
 ```
 
-## 💡Next steps & Ideas
+## 💡Next steps & Ideas
 * Wrap all the commands of the pipeline with some python CLI framework, like [Typer,](https://typer.tiangolo.com) or [click](https://click.palletsprojects.com)
 
 * Adding more pipeline commands, for example, build, release, etc.
-
